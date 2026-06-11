@@ -1,0 +1,20 @@
+
+public class Century {
+
+	public static void main(String[] args) {
+		 int year = 2000;
+
+	        if (year % 100 == 0) {
+
+	            System.out.println("Century Year");
+
+	        } else {
+
+	            System.out.println("Not a Century Year");
+
+	        }
+		// TODO Auto-generated method stub
+
+	}
+
+}
