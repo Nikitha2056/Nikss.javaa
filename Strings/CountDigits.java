@@ -17,3 +17,6 @@ public class CountDigits {
 	}
 
 }
+
+
+3
