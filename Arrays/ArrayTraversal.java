@@ -12,3 +12,11 @@ public class ArrayTraversal {
 	}
 
 }
+
+
+95
+88
+76
+99
+67
+	
