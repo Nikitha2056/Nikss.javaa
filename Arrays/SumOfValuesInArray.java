@@ -14,3 +14,6 @@ public class SumOfValuesInArray {
 	}
 
 }
+
+
+140
