@@ -1,0 +1,18 @@
+public class LinearSearch {
+
+	public static void main(String[] args) {
+		int arr[] = {5,10,15,20,25};
+		int search = 15;
+		for(int i = 0; i < arr.length; i++) {
+			if(arr[i] == search) {
+				System.out.println("Found at Index " + i);
+			}
+		}
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+Found at Index 2
