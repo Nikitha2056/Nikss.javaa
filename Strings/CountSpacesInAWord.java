@@ -17,3 +17,7 @@ public class CountSpacesInAWord {
 	}
 
 }
+
+
+Count = 2
+	
