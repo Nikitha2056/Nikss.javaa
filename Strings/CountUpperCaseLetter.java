@@ -19,3 +19,5 @@ public class CountUpperCaseLetter {
 	}
 
 }
+
+Count = 2
