@@ -17,3 +17,7 @@ public class ReplaceCharacterInAWord {
 	}
 
 }
+
+
+ba#a#a
+
