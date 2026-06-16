@@ -20,3 +20,5 @@ public class SpecialCharacterCount {
 	}
 
 }
+
+Count = 2
