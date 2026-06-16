@@ -20,3 +20,6 @@ public class CountNoOfWords {
 	}
 
 }
+
+
+Words = 3
