@@ -25,3 +25,12 @@ public class DuplicateCharacterOnlyCharacterPrint {
 	}
 
 }
+
+a
+n
+a
+n
+a
+
+
+
