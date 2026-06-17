@@ -36,3 +36,8 @@ public class DuplicateCharacterOnlyOncePrint {
 	}
 
 }
+
+
+
+a
+n
