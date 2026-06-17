@@ -12,3 +12,6 @@ public class ReverseEntireSentence {
 	}
 
 }
+
+
+yddeR ahtikiN alakemahtoK
