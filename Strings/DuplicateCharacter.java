@@ -21,3 +21,12 @@ public class DuplicateCharacter {
 	}
 
 }
+
+
+
+b = 1 
+a = 3 
+n = 2 
+a = 3 
+n = 2 
+a = 3 
