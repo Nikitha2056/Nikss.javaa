@@ -13,3 +13,6 @@ public class AverageOfEle {
 		System.out.println(average);
 	}
 }
+
+
+34
