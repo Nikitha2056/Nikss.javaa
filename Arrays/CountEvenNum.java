@@ -19,3 +19,5 @@ public class CountEvenNum {
 	}
 
 }
+
+Count = 3
