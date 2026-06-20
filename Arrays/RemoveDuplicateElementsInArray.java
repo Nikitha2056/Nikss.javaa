@@ -20,3 +20,6 @@ public class RemoveDuplicateElementsInArray {
 	}
 
 }
+
+
+5 10 15 20 
