@@ -19,3 +19,6 @@ public class CountOddNum {
 	}
 
 }
+
+
+Count = 4
