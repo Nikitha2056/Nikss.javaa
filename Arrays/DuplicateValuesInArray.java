@@ -17,3 +17,7 @@ public class DuplicateValuesInArray {
 	}
 
 }
+
+
+5
+10
