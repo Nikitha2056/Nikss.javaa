@@ -17,3 +17,6 @@ public class DiagonalMatrixOfElements {
 	}
 
 }
+
+
+10 50 90
