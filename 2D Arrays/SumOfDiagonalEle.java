@@ -19,3 +19,6 @@ public class SumOfDiagonalEle {
 	}
 
 }
+
+
+Sum = 150
