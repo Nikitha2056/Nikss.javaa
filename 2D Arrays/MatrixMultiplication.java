@@ -31,3 +31,8 @@ public class MatrixMultiplication {
 	}
 
 }
+
+
+10 40 
+160 250 
+
