@@ -17,3 +17,6 @@ public class MissingNumber {
 	}
 
 }
+
+
+Missing Number = 4
