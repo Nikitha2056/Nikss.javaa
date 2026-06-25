@@ -25,3 +25,6 @@ public class BinarySearch {
 	}
 
 }
+
+
+Found at index = 5
