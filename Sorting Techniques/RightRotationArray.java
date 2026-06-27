@@ -18,3 +18,5 @@ public class RightRotationArray {
 	}
 
 }
+
+Right Rotated Array = 50 10 20 30 40 
