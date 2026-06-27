@@ -21,3 +21,7 @@ public class ArrayLeftRotation {
 	}
 
 }
+
+
+Left Rotated Array = 20 30 40 50 10 
+
