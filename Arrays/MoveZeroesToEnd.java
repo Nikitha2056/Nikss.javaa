@@ -26,3 +26,6 @@ public class MoveZeroesToEnd {
 	}
 
 }
+
+
+After Moving Zeroes = 5 8 12 15 0 0
