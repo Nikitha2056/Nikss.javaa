@@ -21,3 +21,6 @@ public class MaximumDifference {
 	}
 
 }
+
+
+Difference = 50
