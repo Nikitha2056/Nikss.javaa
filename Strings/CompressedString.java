@@ -25,3 +25,6 @@ public class CompressedString {
 	}
 
 }
+
+
+a2b3c4
