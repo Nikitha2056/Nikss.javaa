@@ -20,3 +20,5 @@ public class LongestWordInASentence {
 	}
 
 }
+
+Longest Word = Programming
