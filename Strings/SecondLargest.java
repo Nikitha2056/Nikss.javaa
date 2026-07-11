@@ -25,3 +25,5 @@ public class SecondLargest {
 	}
 
 }
+
+Second Largest = 40
