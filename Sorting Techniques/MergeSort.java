@@ -80,3 +80,8 @@ public class MergeSort {
 	
 	}
 }
+
+
+
+
+Sorted Array = 2 5 8 9 
