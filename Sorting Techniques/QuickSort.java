@@ -38,3 +38,8 @@ public static void main(String[] args) {
 	}
 
 }
+
+
+
+Sorted Array : 
+10 20 30 40 
