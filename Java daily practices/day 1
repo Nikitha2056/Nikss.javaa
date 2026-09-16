@@ -1,0 +1,471 @@
+# ☕ Java Basics — Day 1
+
+## 1. Print a Name
+
+### Code
+
+```java
+package p1;
+
+public class PrintAName {
+
+    public static void main(String[] args) {
+
+        String name = "Nikitha";
+
+        System.out.println("Name = " + name);
+    }
+}
+```
+
+### Output
+
+```text
+Name = Nikitha
+```
+
+### Important Points
+
+* `String` stores text.
+* `System.out.println()` prints output.
+* `+` joins strings and variables.
+* Java statements end with `;`.
+
+---
+
+## 2. Sum of Two Numbers
+
+### Code
+
+```java
+package p1;
+
+public class SumOfNum {
+
+    public static void main(String[] args) {
+
+        int a = 10;
+        int b = 20;
+
+        int sum = a + b;
+
+        System.out.println("Sum = " + sum);
+    }
+}
+```
+
+### Output
+
+```text
+Sum = 30
+```
+
+### Important Points
+
+```java
+int sum = a + b;
+```
+
+* `int` stores integers.
+* `+` performs addition.
+
+---
+
+## 3. Even or Odd
+
+### Code
+
+```java
+package p1;
+
+public class EvenOrOdd {
+
+    public static void main(String[] args) {
+
+        int num = 17;
+
+        if (num % 2 == 0) {
+            System.out.println("Num is Even");
+        } else {
+            System.out.println("Num is Odd");
+        }
+    }
+}
+```
+
+### Output
+
+```text
+Num is Odd
+```
+
+### Important Points
+
+`%` gives the remainder.
+
+```text
+20 % 2 = 0 → Even
+17 % 2 = 1 → Odd
+```
+
+---
+
+## 4. Positive, Negative or Zero
+
+### Code
+
+```java
+package p1;
+
+public class PNZ {
+
+    public static void main(String[] args) {
+
+        int a = -5;
+
+        if (a > 0) {
+            System.out.println("Positive");
+        } else if (a < 0) {
+            System.out.println("Negative");
+        } else {
+            System.out.println("Zero");
+        }
+    }
+}
+```
+
+### Output
+
+```text
+Negative
+```
+
+### Important Points
+
+```text
+a > 0  → Positive
+a < 0  → Negative
+a == 0 → Zero
+```
+
+---
+
+## 5. Largest of Two Numbers
+
+### Code
+
+```java
+package p1;
+
+public class LargestOfTwo {
+
+    public static void main(String[] args) {
+
+        int a = 25;
+        int b = 40;
+
+        if (a > b) {
+            System.out.println("a is Largest");
+        } else {
+            System.out.println("b is Largest");
+        }
+    }
+}
+```
+
+### Output
+
+```text
+b is Largest
+```
+
+### Important Points
+
+Comparison operators:
+
+```text
+>   Greater than
+<   Less than
+==  Equal to
+>=  Greater than or equal
+<=  Less than or equal
+!=  Not equal
+```
+
+---
+
+## 6. Print Numbers from 1 to 5
+
+### Code
+
+```java
+package p1;
+
+public class P1toN {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+    }
+}
+```
+
+### Output
+
+```text
+1
+2
+3
+4
+5
+```
+
+### Important Points
+
+A `for` loop:
+
+```java
+for (initialization; condition; update)
+```
+
+Example:
+
+```java
+for (int i = 1; i <= 5; i++)
+```
+
+* `i = 1` → starting value
+* `i <= 5` → condition
+* `i++` → increase by 1
+
+---
+
+## 7. Sum from 1 to N
+
+### Code
+
+```java
+package p1;
+
+public class S1toN {
+
+    public static void main(String[] args) {
+
+        int sum = 0;
+
+        for (int i = 1; i <= 5; i++) {
+            sum = sum + i;
+        }
+
+        System.out.println("Sum = " + sum);
+    }
+}
+```
+
+### Output
+
+```text
+Sum = 15
+```
+
+### Dry Run
+
+```text
+sum = 0
+
+i = 1 → sum = 1
+i = 2 → sum = 3
+i = 3 → sum = 6
+i = 4 → sum = 10
+i = 5 → sum = 15
+```
+
+### Important Pattern
+
+```java
+int sum = 0;
+
+for (...) {
+    sum = sum + value;
+}
+```
+
+This is a **running sum**.
+
+---
+
+## 8. Multiplication Table
+
+### Code
+
+```java
+package p1;
+
+public class M7 {
+
+    public static void main(String[] args) {
+
+        int num = 7;
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(num * i);
+        }
+    }
+}
+```
+
+### Output
+
+```text
+7
+14
+21
+28
+35
+42
+49
+56
+63
+70
+```
+
+### Important Point
+
+Keep `num` unchanged:
+
+```java
+System.out.println(num * i);
+```
+
+Don't do:
+
+```java
+num = num * i;
+```
+
+because that changes `num` during every iteration.
+
+### `print()` vs `println()`
+
+```java
+System.out.print()
+```
+
+→ Same line
+
+```java
+System.out.println()
+```
+
+→ New line
+
+---
+
+## 9. Print Numbers from 1 to 10
+
+### Code
+
+```java
+package p1;
+
+public class P1toN {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
+    }
+}
+```
+
+### Output
+
+```text
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+```
+
+---
+
+## 10. Print Even Numbers from 1 to 20
+
+### Code
+
+```java
+package p1;
+
+public class EvenNum {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 20; i++) {
+
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+}
+```
+
+### Output
+
+```text
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+```
+
+### Important Pattern
+
+```java
+for (...) {
+    if (condition) {
+        // do something
+    }
+}
+```
+
+This combination of **loop + condition** is extremely important for problem solving.
+
+---
+
+# 🧠 Java Basics Learned
+
+* Variables
+* `int`
+* `String`
+* `if`
+* `else if`
+* `else`
+* `for` loop
+* `%` operator
+* `+`, `*`
+* Comparison operators
+* `++`
+* `print()`
+* `println()`
+* Running sum
+* Basic problem-solving
+
+# 🎯 Day 1 Java Score
+
+**10 / 10 questions completed — 100/100** 🏆
