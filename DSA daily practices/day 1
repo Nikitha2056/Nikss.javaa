@@ -1,0 +1,766 @@
+# 🧠 DSA Basics — Day 1
+
+> **Focus:** Arrays + basic problem-solving patterns
+
+---
+
+## 1. Linear Search
+
+### Problem
+
+Search for `30` in:
+
+```java
+int[] arr = {10, 20, 30, 40, 50};
+```
+
+### Code
+
+```java
+package p1;
+
+public class SearchArray {
+
+    public static void main(String[] args) {
+
+        int[] arr = {10, 20, 30, 40, 50};
+
+        int search = 30;
+
+        boolean found = false;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] == search) {
+                found = true;
+            }
+        }
+
+        if (found) {
+            System.out.println("Element is found");
+        } else {
+            System.out.println("Element not found");
+        }
+    }
+}
+```
+
+### Output
+
+```text
+Element is found
+```
+
+### Important Concept
+
+This is **Linear Search**.
+
+```text
+10 → ❌
+20 → ❌
+30 → ✅
+```
+
+We check elements one by one.
+
+### Why `boolean found`?
+
+Initially:
+
+```java
+boolean found = false;
+```
+
+When found:
+
+```java
+found = true;
+```
+
+After searching:
+
+```java
+if (found)
+```
+
+### Complexity
+
+```text
+Time  : O(n)
+Space : O(1)
+```
+
+---
+
+# 2. Find Largest Element
+
+### Problem
+
+```java
+int[] arr = {10, 25, 7, 40, 15};
+```
+
+### Code
+
+```java
+package p1;
+
+public class LargestEle {
+
+    public static void main(String[] args) {
+
+        int[] arr = {10, 25, 7, 40, 15};
+
+        int largest = arr[0];
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] > largest) {
+                largest = arr[i];
+            }
+        }
+
+        System.out.println("The Largest element = " + largest);
+    }
+}
+```
+
+### Output
+
+```text
+The Largest element = 40
+```
+
+### Dry Run
+
+```text
+largest = 10
+
+25 > 10 → largest = 25
+7 > 25  → No
+40 > 25 → largest = 40
+15 > 40 → No
+```
+
+### Important Pattern
+
+```java
+int largest = arr[0];
+
+for (...) {
+    if (arr[i] > largest) {
+        largest = arr[i];
+    }
+}
+```
+
+### Complexity
+
+```text
+Time  : O(n)
+Space : O(1)
+```
+
+---
+
+# 3. Find Smallest Element
+
+### Code
+
+```java
+package p1;
+
+public class SmallestEle {
+
+    public static void main(String[] args) {
+
+        int[] arr = {10, 25, 7, 40, 15};
+
+        int smallest = arr[0];
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] < smallest) {
+                smallest = arr[i];
+            }
+        }
+
+        System.out.println("The Smallest element = " + smallest);
+    }
+}
+```
+
+### Output
+
+```text
+The Smallest element = 7
+```
+
+### Important Pattern
+
+```java
+int smallest = arr[0];
+
+for (...) {
+    if (arr[i] < smallest) {
+        smallest = arr[i];
+    }
+}
+```
+
+### Complexity
+
+```text
+Time  : O(n)
+Space : O(1)
+```
+
+---
+
+# 4. Count Even Numbers
+
+### Code
+
+```java
+package p1;
+
+public class CountEvenNum {
+
+    public static void main(String[] args) {
+
+        int[] arr = {10, 15, 22, 7, 8, 13};
+
+        int count = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] % 2 == 0) {
+                count++;
+            }
+        }
+
+        System.out.println("Count = " + count);
+    }
+}
+```
+
+### Output
+
+```text
+Count = 3
+```
+
+### Important Pattern
+
+```java
+int count = 0;
+
+if (condition) {
+    count++;
+}
+```
+
+This is the **counting pattern**.
+
+### Complexity
+
+```text
+Time  : O(n)
+Space : O(1)
+```
+
+---
+
+# 5. Sum of Array Elements
+
+### Code
+
+```java
+package p1;
+
+public class SumOfArray {
+
+    public static void main(String[] args) {
+
+        int[] arr = {10, 20, 30, 40, 50};
+
+        int sum = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            sum = sum + arr[i];
+        }
+
+        System.out.println("Sum = " + sum);
+    }
+}
+```
+
+### Output
+
+```text
+Sum = 150
+```
+
+### Dry Run
+
+```text
+sum = 0
+
+10 → sum = 10
+20 → sum = 30
+30 → sum = 60
+40 → sum = 100
+50 → sum = 150
+```
+
+### Complexity
+
+```text
+Time  : O(n)
+Space : O(1)
+```
+
+---
+
+# 6. Reverse an Array
+
+### Problem
+
+```java
+{10, 20, 30, 40, 50}
+```
+
+Print:
+
+```text
+50 40 30 20 10
+```
+
+### Code
+
+```java
+package p1;
+
+public class ReverseAnArray {
+
+    public static void main(String[] args) {
+
+        int[] arr = {10, 20, 30, 40, 50};
+
+        System.out.print("Reverse Array = ");
+
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+```
+
+### Output
+
+```text
+Reverse Array = 50 40 30 20 10
+```
+
+### 🧠 Array Indexes
+
+```text
+Value:  10   20   30   40   50
+Index:   0    1    2    3    4
+```
+
+Reverse traversal:
+
+```text
+4 → 3 → 2 → 1 → 0
+```
+
+### Important Pattern
+
+```java
+for (int i = arr.length - 1; i >= 0; i--)
+```
+
+### Complexity
+
+```text
+Time  : O(n)
+Space : O(1)
+```
+
+---
+
+# 7. Count Odd Numbers
+
+### Code
+
+```java
+package p1;
+
+public class CountOdd {
+
+    public static void main(String[] args) {
+
+        int[] arr = {10, 15, 22, 7, 8, 13};
+
+        int count = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] % 2 != 0) {
+                count++;
+            }
+        }
+
+        System.out.println("Count = " + count);
+    }
+}
+```
+
+### Output
+
+```text
+Count = 3
+```
+
+### Important Points
+
+Even:
+
+```java
+arr[i] % 2 == 0
+```
+
+Odd:
+
+```java
+arr[i] % 2 != 0
+```
+
+### Complexity
+
+```text
+Time  : O(n)
+Space : O(1)
+```
+
+---
+
+# 8. Find Index of an Element
+
+### Problem
+
+Find the index of `30`.
+
+```java
+int[] arr = {10, 20, 30, 40, 50};
+```
+
+### Code
+
+```java
+package p1;
+
+public class FindTheIndex {
+
+    public static void main(String[] args) {
+
+        int[] arr = {10, 20, 30, 40, 50};
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] == 30) {
+                System.out.println("Index = " + i);
+            }
+        }
+    }
+}
+```
+
+### Output
+
+```text
+Index = 2
+```
+
+### 🧠 Important Concept
+
+Arrays use **zero-based indexing**.
+
+```text
+Index:  0    1    2    3    4
+Value: 10   20   30   40   50
+                  ↑
+                index 2
+```
+
+Remember:
+
+```java
+arr[i]
+```
+
+→ value at index `i`
+
+```java
+i
+```
+
+→ index itself
+
+### Complexity
+
+```text
+Time  : O(n)
+Space : O(1)
+```
+
+---
+
+# 9. Count Positive Numbers
+
+### Code
+
+```java
+package p1;
+
+public class CountPosNum {
+
+    public static void main(String[] args) {
+
+        int[] arr = {-5, 10, -2, 20, 0, 15};
+
+        int count = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] > 0) {
+                count++;
+            }
+        }
+
+        System.out.println("Count = " + count);
+    }
+}
+```
+
+### Output
+
+```text
+Count = 3
+```
+
+### Important Points
+
+```java
+arr[i] > 0
+```
+
+→ Positive
+
+```java
+arr[i] < 0
+```
+
+→ Negative
+
+```java
+arr[i] == 0
+```
+
+→ Zero
+
+⚠️ `0` is neither positive nor negative.
+
+### Complexity
+
+```text
+Time  : O(n)
+Space : O(1)
+```
+
+---
+
+# 10. Second Largest Element
+
+### Problem
+
+Find the second-largest element without sorting.
+
+```java
+{10, 25, 7, 40, 15}
+```
+
+### Code
+
+```java
+package p1;
+
+public class SecondLargest {
+
+    public static void main(String[] args) {
+
+        int[] arr = {10, 25, 7, 40, 15};
+
+        int largest = arr[0];
+        int secondLargest = largest;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] > largest) {
+
+                secondLargest = largest;
+                largest = arr[i];
+            }
+        }
+
+        System.out.println("Second Largest = " + secondLargest);
+    }
+}
+```
+
+### Output
+
+```text
+Second Largest = 25
+```
+
+### 🧠 Key Idea
+
+When a new largest is found:
+
+```text
+Old largest → secondLargest
+New value   → largest
+```
+
+Example:
+
+```text
+largest = 25
+secondLargest = 10
+
+Find 40
+
+secondLargest = 25
+largest = 40
+```
+
+### Important Order
+
+Correct:
+
+```java
+secondLargest = largest;
+largest = arr[i];
+```
+
+Not:
+
+```java
+largest = arr[i];
+secondLargest = arr[i];
+```
+
+### ⚠️ Interview Note
+
+This basic version is enough for our first practice, but later we'll make it interview-ready by handling:
+
+* Duplicate values
+* Negative numbers
+* Arrays with fewer than 2 elements
+* Distinct vs non-distinct second largest
+
+### Complexity
+
+```text
+Time  : O(n)
+Space : O(1)
+```
+
+---
+
+# 🧠 DSA Patterns Learned
+
+## 1. Array Traversal
+
+```java
+for (int i = 0; i < arr.length; i++) {
+    // arr[i]
+}
+```
+
+## 2. Reverse Traversal
+
+```java
+for (int i = arr.length - 1; i >= 0; i--) {
+    // arr[i]
+}
+```
+
+## 3. Counting
+
+```java
+int count = 0;
+
+if (condition) {
+    count++;
+}
+```
+
+## 4. Running Sum
+
+```java
+int sum = 0;
+
+for (...) {
+    sum = sum + arr[i];
+}
+```
+
+## 5. Maximum
+
+```java
+int largest = arr[0];
+
+if (arr[i] > largest) {
+    largest = arr[i];
+}
+```
+
+## 6. Minimum
+
+```java
+int smallest = arr[0];
+
+if (arr[i] < smallest) {
+    smallest = arr[i];
+}
+```
+
+## 7. Search
+
+```java
+if (arr[i] == search) {
+    found = true;
+}
+```
+
+---
+
+# 🎯 Day 1 DSA Score
+
+**10 / 10 questions completed — 100/100** 🏆
+
+### Topics Completed
+
+* ✅ Array traversal
+* ✅ Linear search
+* ✅ Indexing
+* ✅ Maximum
+* ✅ Minimum
+* ✅ Sum
+* ✅ Counting
+* ✅ Even/Odd
+* ✅ Reverse traversal
+* ✅ Second largest
